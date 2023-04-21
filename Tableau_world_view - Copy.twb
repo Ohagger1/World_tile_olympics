@@ -1,0 +1,1360 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='World Tile Map_updated_World Ti (World Tile Map_updated_World Tile Map_updated)' inline='true' name='federated.1ihk34v1vn5fzo1bsl6le1hns9ss' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='World Tile Map_updated_World Tile Map_updated' name='excel-direct.0ip1ii60hyfh99122gqfb08c8eee'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ohagg/OneDrive - University College London/Desktop/Github/Summer_olympics/World Tile Map_updated_World Tile Map_updated.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='summer' name='excel-direct.0skj1do1blw8r610w1qaa059yfz0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ohagg/OneDrive - University College London/Desktop/Github/Summer_olympics/summer.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='List of summer olympic hos cities' name='excel-direct.0d721mr1cu55wj124tg8l19ifi9w'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ohagg/OneDrive - University College London/Desktop/Github/Summer_olympics/List of summer olympic hos cities.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[World Tile Map_updated_World Ti].[Code]' />
+              <expression op='[World Tile Map_updated_World Ti1].[Code]' />
+            </expression>
+          </clause>
+          <relation join='right' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[World Tile Map_updated_World Ti].[Country]' />
+                <expression op='[Host cities for Summer and Wint].[Country]' />
+              </expression>
+            </clause>
+            <relation connection='excel-direct.0ip1ii60hyfh99122gqfb08c8eee' name='World Tile Map_updated_World Ti' table='[&apos;World Tile Map_updated_World Ti$&apos;]' type='table'>
+              <columns gridOrigin='A1:J201:no:A1:J201:0' header='yes' outcome='6'>
+                <column datatype='string' name='Code' ordinal='0' />
+                <column datatype='string' name='Continent' ordinal='1' />
+                <column datatype='string' name='Continent 1' ordinal='2' />
+                <column datatype='string' name='Country' ordinal='3' />
+                <column datatype='string' name='Group' ordinal='4' />
+                <column datatype='integer' name='Col' ordinal='5' />
+                <column datatype='integer' name='Hex Col' ordinal='6' />
+                <column datatype='real' name='Hex Row' ordinal='7' />
+                <column datatype='integer' name='Number of Records' ordinal='8' />
+                <column datatype='integer' name='Row' ordinal='9' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.0d721mr1cu55wj124tg8l19ifi9w' name='Host cities for Summer and Wint' table='[&apos;Host cities for Summer and Wint$&apos;]' type='table'>
+              <columns gridOrigin='A1:H65:no:A1:H65:0' header='yes' outcome='2'>
+                <column datatype='string' name='City2' ordinal='0' />
+                <column datatype='string' name='Country' ordinal='1' />
+                <column datatype='string' name='Year' ordinal='2' />
+                <column datatype='string' name='Region' ordinal='3' />
+                <column datatype='string' name='Summer' ordinal='4' />
+                <column datatype='string' name='Winter' ordinal='5' />
+                <column datatype='string' name='Opening ceremony' ordinal='6' />
+                <column datatype='string' name='Closing ceremony' ordinal='7' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.0ip1ii60hyfh99122gqfb08c8eee' name='World Tile Map_updated_World Ti1' table='[&apos;World Tile Map_updated_World Ti$&apos;]' type='table'>
+            <columns gridOrigin='A1:J201:no:A1:J201:0' header='yes' outcome='6'>
+              <column datatype='string' name='Code' ordinal='0' />
+              <column datatype='string' name='Continent' ordinal='1' />
+              <column datatype='string' name='Continent 1' ordinal='2' />
+              <column datatype='string' name='Country' ordinal='3' />
+              <column datatype='string' name='Group' ordinal='4' />
+              <column datatype='integer' name='Col' ordinal='5' />
+              <column datatype='integer' name='Hex Col' ordinal='6' />
+              <column datatype='real' name='Hex Row' ordinal='7' />
+              <column datatype='integer' name='Number of Records' ordinal='8' />
+              <column datatype='integer' name='Row' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[World Tile Map_updated_World Ti].[Code]' />
+              <expression op='[World Tile Map_updated_World Ti1].[Code]' />
+            </expression>
+          </clause>
+          <relation join='right' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[World Tile Map_updated_World Ti].[Country]' />
+                <expression op='[Host cities for Summer and Wint].[Country]' />
+              </expression>
+            </clause>
+            <relation connection='excel-direct.0ip1ii60hyfh99122gqfb08c8eee' name='World Tile Map_updated_World Ti' table='[&apos;World Tile Map_updated_World Ti$&apos;]' type='table'>
+              <columns gridOrigin='A1:J201:no:A1:J201:0' header='yes' outcome='6'>
+                <column datatype='string' name='Code' ordinal='0' />
+                <column datatype='string' name='Continent' ordinal='1' />
+                <column datatype='string' name='Continent 1' ordinal='2' />
+                <column datatype='string' name='Country' ordinal='3' />
+                <column datatype='string' name='Group' ordinal='4' />
+                <column datatype='integer' name='Col' ordinal='5' />
+                <column datatype='integer' name='Hex Col' ordinal='6' />
+                <column datatype='real' name='Hex Row' ordinal='7' />
+                <column datatype='integer' name='Number of Records' ordinal='8' />
+                <column datatype='integer' name='Row' ordinal='9' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.0d721mr1cu55wj124tg8l19ifi9w' name='Host cities for Summer and Wint' table='[&apos;Host cities for Summer and Wint$&apos;]' type='table'>
+              <columns gridOrigin='A1:H65:no:A1:H65:0' header='yes' outcome='2'>
+                <column datatype='string' name='City2' ordinal='0' />
+                <column datatype='string' name='Country' ordinal='1' />
+                <column datatype='string' name='Year' ordinal='2' />
+                <column datatype='string' name='Region' ordinal='3' />
+                <column datatype='string' name='Summer' ordinal='4' />
+                <column datatype='string' name='Winter' ordinal='5' />
+                <column datatype='string' name='Opening ceremony' ordinal='6' />
+                <column datatype='string' name='Closing ceremony' ordinal='7' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.0ip1ii60hyfh99122gqfb08c8eee' name='World Tile Map_updated_World Ti1' table='[&apos;World Tile Map_updated_World Ti$&apos;]' type='table'>
+            <columns gridOrigin='A1:J201:no:A1:J201:0' header='yes' outcome='6'>
+              <column datatype='string' name='Code' ordinal='0' />
+              <column datatype='string' name='Continent' ordinal='1' />
+              <column datatype='string' name='Continent 1' ordinal='2' />
+              <column datatype='string' name='Country' ordinal='3' />
+              <column datatype='string' name='Group' ordinal='4' />
+              <column datatype='integer' name='Col' ordinal='5' />
+              <column datatype='integer' name='Hex Col' ordinal='6' />
+              <column datatype='real' name='Hex Row' ordinal='7' />
+              <column datatype='integer' name='Number of Records' ordinal='8' />
+              <column datatype='integer' name='Row' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[City2]' value='[Host cities for Summer and Wint].[City2]' />
+          <map key='[Closing ceremony]' value='[Host cities for Summer and Wint].[Closing ceremony]' />
+          <map key='[Code (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Code]' />
+          <map key='[Code]' value='[World Tile Map_updated_World Ti].[Code]' />
+          <map key='[Col (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Col]' />
+          <map key='[Col]' value='[World Tile Map_updated_World Ti].[Col]' />
+          <map key='[Continent (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Continent]' />
+          <map key='[Continent 1 (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Continent 1]' />
+          <map key='[Continent 1]' value='[World Tile Map_updated_World Ti].[Continent 1]' />
+          <map key='[Continent]' value='[World Tile Map_updated_World Ti].[Continent]' />
+          <map key='[Country (Host cities for Summer and Wint)]' value='[Host cities for Summer and Wint].[Country]' />
+          <map key='[Country (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Country]' />
+          <map key='[Country]' value='[World Tile Map_updated_World Ti].[Country]' />
+          <map key='[Group (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Group]' />
+          <map key='[Group]' value='[World Tile Map_updated_World Ti].[Group]' />
+          <map key='[Hex Col (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Hex Col]' />
+          <map key='[Hex Col]' value='[World Tile Map_updated_World Ti].[Hex Col]' />
+          <map key='[Hex Row (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Hex Row]' />
+          <map key='[Hex Row]' value='[World Tile Map_updated_World Ti].[Hex Row]' />
+          <map key='[Number of Records (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Number of Records]' />
+          <map key='[Number of Records]' value='[World Tile Map_updated_World Ti].[Number of Records]' />
+          <map key='[Opening ceremony]' value='[Host cities for Summer and Wint].[Opening ceremony]' />
+          <map key='[Region]' value='[Host cities for Summer and Wint].[Region]' />
+          <map key='[Row (World Tile Map!updated!World Ti1)]' value='[World Tile Map_updated_World Ti1].[Row]' />
+          <map key='[Row]' value='[World Tile Map_updated_World Ti].[Row]' />
+          <map key='[Summer]' value='[Host cities for Summer and Wint].[Summer]' />
+          <map key='[Winter]' value='[Host cities for Summer and Wint].[Winter]' />
+          <map key='[Year]' value='[Host cities for Summer and Wint].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J201:no:A1:J201:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H65:no:A1:H65:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J201:no:A1:J201:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Continent 1]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Continent 1</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Group]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Group</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Col</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Col]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Col</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hex Col</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hex Col]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Hex Col</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hex Row</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hex Row]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Hex Row</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti]</parent-name>
+            <remote-alias>Row</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City2]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>City2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (Host cities for Summer and Wint)]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Summer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Summer]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>Summer</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Winter</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Winter]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>Winter</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opening ceremony</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Opening ceremony]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>Opening ceremony</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closing ceremony</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Closing ceremony]</local-name>
+            <parent-name>[Host cities for Summer and Wint]</parent-name>
+            <remote-alias>Closing ceremony</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Code (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Continent (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Continent 1 (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Continent 1</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Group (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Group</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Col</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Col (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Col</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hex Col</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hex Col (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Hex Col</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hex Row</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hex Row (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Hex Row</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row (World Tile Map!updated!World Ti1)]</local-name>
+            <parent-name>[World Tile Map_updated_World Ti1]</parent-name>
+            <remote-alias>Row</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='City3' datatype='string' name='[City2 (copy)_461900454651596800]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <calculation class='tableau' formula='[City2]' />
+      </column>
+      <column datatype='string' name='[City2]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Code1' datatype='string' name='[Code]' role='dimension' type='nominal' />
+      <column caption='Col1' datatype='integer' name='[Col]' role='measure' type='quantitative' />
+      <column caption='Continent1' datatype='string' name='[Continent]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country (Host cities for Summer and Wint)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country (World Tile Map!updated!World Ti1)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Group1' datatype='string' name='[Group]' role='dimension' type='nominal' />
+      <column caption='Row1' datatype='integer' name='[Row]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='World Tile Map_updated_World Ti' datatype='table' name='[__tableau_internal_object_id__].[World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154]' role='measure' type='quantitative' />
+      <column-instance column='[City2]' derivation='None' name='[none:City2:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:City2:nk]' type='palette'>
+            <map to='#8cd17d'>
+              <bucket>&quot;Albertville&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Amsterdam&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Antwerp&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Athens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Atlanta&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Barcelona&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Beijing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Berlin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Brisbane&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Calgary&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chamonix&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;City&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cortina d&apos;Ampezzo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Garmisch-Partenkirchen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Grenoble&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Helsinki&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Innsbruck&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lake Placid&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lillehammer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;London&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Melbourne&#13;&#10;Stockholm&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mexico City&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Milan–Cortina d&apos;Ampezzo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Montreal&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Moscow&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Munich&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nagano&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Oslo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pyeongchang&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rio de Janeiro&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rome&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Salt Lake City&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sapporo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sapporo&#13;
+Garmisch-Partenkirchen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sarajevo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Seoul&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sochi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Squaw Valley&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;St. Louis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;St. Moritz&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Stockholm&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sydney&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;TBD&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tokyo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tokyo&#13;&#10;Helsinki&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Turin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vancouver&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='World Tile Map_updated_World Ti' id='World Tile Map!updated!World Ti_ED0A420BBFC040DEB073DEA121134154'>
+            <properties context=''>
+              <relation join='full' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[World Tile Map_updated_World Ti].[Code]' />
+                    <expression op='[World Tile Map_updated_World Ti1].[Code]' />
+                  </expression>
+                </clause>
+                <relation join='right' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[World Tile Map_updated_World Ti].[Country]' />
+                      <expression op='[Host cities for Summer and Wint].[Country]' />
+                    </expression>
+                  </clause>
+                  <relation connection='excel-direct.0ip1ii60hyfh99122gqfb08c8eee' name='World Tile Map_updated_World Ti' table='[&apos;World Tile Map_updated_World Ti$&apos;]' type='table'>
+                    <columns gridOrigin='A1:J201:no:A1:J201:0' header='yes' outcome='6'>
+                      <column datatype='string' name='Code' ordinal='0' />
+                      <column datatype='string' name='Continent' ordinal='1' />
+                      <column datatype='string' name='Continent 1' ordinal='2' />
+                      <column datatype='string' name='Country' ordinal='3' />
+                      <column datatype='string' name='Group' ordinal='4' />
+                      <column datatype='integer' name='Col' ordinal='5' />
+                      <column datatype='integer' name='Hex Col' ordinal='6' />
+                      <column datatype='real' name='Hex Row' ordinal='7' />
+                      <column datatype='integer' name='Number of Records' ordinal='8' />
+                      <column datatype='integer' name='Row' ordinal='9' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.0d721mr1cu55wj124tg8l19ifi9w' name='Host cities for Summer and Wint' table='[&apos;Host cities for Summer and Wint$&apos;]' type='table'>
+                    <columns gridOrigin='A1:H65:no:A1:H65:0' header='yes' outcome='2'>
+                      <column datatype='string' name='City2' ordinal='0' />
+                      <column datatype='string' name='Country' ordinal='1' />
+                      <column datatype='string' name='Year' ordinal='2' />
+                      <column datatype='string' name='Region' ordinal='3' />
+                      <column datatype='string' name='Summer' ordinal='4' />
+                      <column datatype='string' name='Winter' ordinal='5' />
+                      <column datatype='string' name='Opening ceremony' ordinal='6' />
+                      <column datatype='string' name='Closing ceremony' ordinal='7' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='excel-direct.0ip1ii60hyfh99122gqfb08c8eee' name='World Tile Map_updated_World Ti1' table='[&apos;World Tile Map_updated_World Ti$&apos;]' type='table'>
+                  <columns gridOrigin='A1:J201:no:A1:J201:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Code' ordinal='0' />
+                    <column datatype='string' name='Continent' ordinal='1' />
+                    <column datatype='string' name='Continent 1' ordinal='2' />
+                    <column datatype='string' name='Country' ordinal='3' />
+                    <column datatype='string' name='Group' ordinal='4' />
+                    <column datatype='integer' name='Col' ordinal='5' />
+                    <column datatype='integer' name='Hex Col' ordinal='6' />
+                    <column datatype='real' name='Hex Row' ordinal='7' />
+                    <column datatype='integer' name='Number of Records' ordinal='8' />
+                    <column datatype='integer' name='Row' ordinal='9' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_9A439636C3A540BDB7F96A52E6E07CFF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='World Tile Map' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='City2' />
+        <param name='target' value='World Tile Map' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='World Tile Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='World Tile Map_updated_World Ti (World Tile Map_updated_World Tile Map_updated)' name='federated.1ihk34v1vn5fzo1bsl6le1hns9ss' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ihk34v1vn5fzo1bsl6le1hns9ss'>
+            <column caption='City3' datatype='string' name='[City2 (copy)_461900454651596800]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <calculation class='tableau' formula='[City2]' />
+            </column>
+            <column datatype='string' name='[City2]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Code (World Tile Map!updated!World Ti1)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Col (World Tile Map!updated!World Ti1)]' role='measure' type='quantitative' />
+            <column caption='Continent1' datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Group1' datatype='string' name='[Group]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Row (World Tile Map!updated!World Ti1)]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='Attribute' name='[attr:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[City2 (copy)_461900454651596800]' derivation='Count' name='[cnt:City2 (copy)_461900454651596800:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City2]' derivation='None' name='[none:City2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Code (World Tile Map!updated!World Ti1)]' derivation='None' name='[none:Code (World Tile Map!updated!World Ti1):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Col (World Tile Map!updated!World Ti1)]' derivation='None' name='[none:Col (World Tile Map!updated!World Ti1):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Group]' derivation='None' name='[none:Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Row (World Tile Map!updated!World Ti1)]' derivation='None' name='[none:Row (World Tile Map!updated!World Ti1):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Continent:nk]'>
+            <groupfilter function='level-members' level='[none:Continent:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Group:nk]'>
+            <groupfilter function='level-members' level='[none:Group:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Continent:nk]</column>
+            <column>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <encoding attr='space' class='0' field='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Row (World Tile Map!updated!World Ti1):qk]' field-type='quantitative' reverse='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Row (World Tile Map!updated!World Ti1):qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Col (World Tile Map!updated!World Ti1):qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='auto' />
+            <format attr='text-align' value='auto' />
+            <format attr='text-align' scope='rows' value='auto' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:City2:nk]' />
+              <color column='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[cnt:City2 (copy)_461900454651596800:ok]' />
+              <text column='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Code (World Tile Map!updated!World Ti1):nk]' />
+              <lod column='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[attr:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/square' />
+                <format attr='size' value='2.7734806537628174' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Row (World Tile Map!updated!World Ti1):qk]</rows>
+        <cols>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Col (World Tile Map!updated!World Ti1):qk]</cols>
+      </table>
+      <simple-id uuid='{D0C6690D-306C-49CF-87CE-97100ABD4AAE}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A22745D8-E305-4378-987D-BBE23D378548}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='World Tile Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='62'>
+            <card type='columns' />
+          </strip>
+          <strip size='70'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:City2:nk]&#10;[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[cnt:City2 (copy)_461900454651596800:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[attr:Code:nk]</field>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[cnt:City2 (copy)_461900454651596800:ok]</field>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:City2:nk]</field>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Code (World Tile Map!updated!World Ti1):nk]</field>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Code:nk]</field>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Continent:nk]</field>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Country:nk]</field>
+            <field>[federated.1ihk34v1vn5fzo1bsl6le1hns9ss].[none:Group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{47FE1DC0-240A-4E8E-827A-D096840CBAB6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{26AA24DB-37E8-40BD-B502-CBA09A6008EB}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='World Tile Map' width='192'>
+      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
+      at8AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
