@@ -1,0 +1,201 @@
+﻿Code,Continent,Continent 1,Country,Group,Col,Hex Col,Hex Row,Number of Records,Row
+ESH,Africa,Africa,Western Sahara,Africa,11,11,13.5,1,14
+CVD,Africa,Africa,Cabo Verde,Africa,11,11,15.5,1,16
+MAU,Africa,Africa,Mauritania,Africa,12,12,13,1,13
+GUB,Africa,Africa,Guinea-Bissau,Africa,12,12,14,1,14
+GUI,Africa,Africa,Guinea,Africa,12,12,15,1,15
+STP,Africa,Africa,São Tomé and Príncipe,Africa,12,12,17,1,17
+MOR,Africa,Africa,Morocco,Africa,13,13,11.5,1,12
+GAM,Africa,Africa,Gambia,Africa,13,13,12.5,1,13
+SIE,Africa,Africa,Sierra Leone,Africa,13,13,13.5,1,14
+LIB,Africa,Africa,Liberia,Africa,13,13,14.5,1,15
+CIV,Africa,Africa,Cote d'Ivoire,Africa,13,13,15.5,1,16
+ALG,Africa,Africa,Algeria,Africa,14,14,11,1,12
+SEN,Africa,Africa,Senegal,Africa,14,14,12,1,13
+BKF,Africa,Africa,Burkina Faso,Africa,14,14,13,1,14
+GHA,Africa,Africa,Ghana,Africa,14,14,14,1,15
+NGR,Africa,Africa,Nigeria,Africa,14,14,15,1,16
+EQG,Africa,Africa,Equatorial Guinea,Africa,14,14,16,1,17
+ANG,Africa,Africa,Angola,Africa,14,14,17,1,18
+TUN,Africa,Africa,Tunisia,Africa,15,15,11.5,1,12
+MLI,Africa,Africa,Mali,Africa,15,15,12.5,1,13
+CHA,Africa,Africa,Chad,Africa,15,15,13.5,1,14
+TOG,Africa,Africa,Togo,Africa,15,15,14.5,1,15
+CAM,Africa,Africa,Cameroon,Africa,15,15,15.5,1,16
+CON,Africa,Africa,"Congo, Republic of the (Congo-Brazzaville)",Africa,15,15,16.5,1,17
+GAB,Africa,Africa,Gabon (Gabonese Republic),Africa,15,15,17.5,1,18
+ZAM,Africa,Africa,Zambia,Africa,15,15,18.5,1,19
+LBY,Africa,Africa,Libya,Africa,16,16,11,1,12
+NIG,Africa,Africa,Niger,Africa,16,16,12,1,13
+SSU,Africa,Africa,South Sudan,Africa,16,16,13,1,14
+BEN,Africa,Africa,Benin,Africa,16,16,14,1,15
+DRC,Africa,Africa,"Congo, Democratic Republic of the (Congo-Kinshasa)",Africa,16,16,15,1,16
+BUR,Africa,Africa,Burundi,Africa,16,16,16,1,17
+MLW,Africa,Africa,Malawi,Africa,16,16,17,1,18
+BOT,Africa,Africa,Botswana,Africa,16,16,18,1,19
+NAM,Africa,Africa,Namibia,Africa,16,16,19,1,20
+EGY,Africa,Africa,Egypt,Africa,17,17,11.5,1,12
+SUD,Africa,Africa,Sudan,Africa,17,17,12.5,1,13
+ERI,Africa,Africa,Eritrea,Africa,17,17,13.5,1,14
+CAR,Africa,Africa,Central African Republic,Africa,17,17,14.5,1,15
+UGA,Africa,Africa,Uganda,Africa,17,17,15.5,1,16
+RWA,Africa,Africa,Rwanda,Africa,17,17,16.5,1,17
+MOZ,Africa,Africa,Mozambique,Africa,17,17,17.5,1,18
+ZIM,Africa,Africa,Zimbabwe,Africa,17,17,18.5,1,19
+SWZ,Africa,Africa,Eswatini,Africa,17,17,19.5,1,20
+RSA,Africa,Africa,South Africa,Africa,17,17,20.5,1,21
+DJI,Africa,Africa,Djibouti,Africa,18,18,13,1,14
+ETH,Africa,Africa,Ethiopia,Africa,18,18,14,1,15
+KEN,Africa,Africa,Kenya,Africa,18,18,15,1,16
+TAN,Africa,Africa,Tanzania,Africa,18,18,16,1,17
+LES,Africa,Africa,Lesotho,Africa,18,18,20,1,20
+SOM,Africa,Africa,Somalia,Africa,19,19,14.5,1,15
+CMR,Africa,Africa,Comoros,Africa,19,19,17.5,1,18
+MYT,Africa,Africa,Mayotte,Africa,19,19,18.5,1,19
+SEY,Africa,Africa,Seychelles,Africa,20,20,17,1,18
+MAD,Africa,Africa,Madagascar,Africa,20,20,19,1,20
+REU,Africa,Africa,Réunion,Africa,20,20,20,1,21
+MRI,Africa,Africa,Mauritius,Africa,21,21,19.5,1,20
+BHM,Caribbean,North America,Bahamas,America,5,5,2.5,1,3
+CUB,Caribbean,North America,Cuba,America,5,5,3.5,1,4
+JAM,Caribbean,North America,Jamaica,America,5,5,4.5,1,5
+HAI,Caribbean,North America,Haiti,America,6,6,5,1,5
+DOM,Caribbean,North America,Dominican Republic,America,7,7,4.5,1,5
+SKN,Caribbean,North America,Saint Kitts and Nevis,America,7,7,5.5,1,6
+ANT,Caribbean,North America,Antigua and Barbuda,America,8,8,5,1,5
+STL,Caribbean,North America,Saint Lucia,America,8,8,6,1,6
+SVG,Caribbean,North America,Saint Vincent and the Grenadines,America,8,8,7,1,7
+DMN,Caribbean,North America,Dominica,America,8,8,8,1,8
+GRN,Caribbean,North America,Grenada,America,8,8,9,1,9
+TTO,Caribbean,North America,Trinidad and Tobago,America,8,8,10,1,10
+BAR,Caribbean,North America,Barbados,America,9,9,6.5,1,7
+GUA,Central America,North America,Guatemala,America,2,2,5,1,5
+ELS,Central America,North America,El Salvador,America,2,2,6,1,6
+BLZ,Central America,North America,Belize,America,3,3,6.5,1,4
+HON,Central America,North America,Honduras,America,3,3,7.5,1,6
+NIC,Central America,North America,Nicaragua,America,3,3,8.5,1,7
+CRC,Central America,North America,Costa Rica,America,4,4,9,1,8
+PAN,Central America,North America,Panama,America,5,5,9.5,1,9
+UZB,Central Asia,Asia,Uzbekistan,Asia,23,23,6.5,1,7
+TKM,Central Asia,Asia,Turkmenistan,Asia,23,23,7.5,1,8
+KYR,Central Asia,Asia,Kyrgyzstan,Asia,24,24,7,1,7
+TAJ,Central Asia,Asia,Tajikistan,Asia,24,24,8,1,8
+KAZ,Central Asia,Asia,Kazakhstan,Asia,24,24,6,1,6
+CHN,Eastern Asia,Asia,China,Asia,25,25,6.5,1,7
+MGL,Eastern Asia,Asia,Mongolia,Asia,26,26,6,1,6
+NKO,Eastern Asia,Asia,North Korea,Asia,27,27,6,1,6
+KOR,Eastern Asia,Asia,South Korea,Asia,27,27,7,1,7
+JAP,Eastern Asia,Asia,Japan,Asia,29,29,7,1,7
+HKG,Eastern Asia,Asia,Hong Kong,Asia,25,25,7.5,1,8
+MAC,Eastern Asia,Asia,Macao,Asia,26,26,8,1,8
+TWN,Eastern Asia,Asia,Taiwan,Asia,28,28,8,1,8
+RUS,Europe,Asia,Russia,Europe,20,20,5,1,5
+GLD,Europe,Europe,Greenland,Europe,9,9,2.5,1,2
+IRE,Europe,Europe,Ireland,Europe,11,11,3.5,1,4
+ISL,Europe,Europe,Iceland,Europe,12,12,2,1,2
+GBR,Europe,Europe,United Kingdom,Europe,12,12,4,1,4
+POR,Europe,Europe,Portugal,Europe,12,12,7,1,7
+MLT,Europe,Europe,Malta,Europe,14,13,9.5,1,10
+FRA,Europe,Europe,France,Europe,13,13,5.5,1,6
+SPA,Europe,Europe,Spain,Europe,13,13,6.5,1,7
+NLD,Europe,Europe,Netherlands,Europe,14,14,5,1,5
+BEL,Europe,Europe,Belgium,Europe,14,14,6,1,6
+LUX,Europe,Europe,Luxembourg,Europe,14,14,7,1,7
+ITA,Europe,Europe,Italy,Europe,14,14,8,1,8
+DEN,Europe,Europe,Denmark,Europe,15,15,3.5,1,2
+GER,Europe,Europe,Germany,Europe,15,15,4.5,1,5
+SWI,Europe,Europe,Switzerland,Europe,15,15,5.5,1,6
+SLO,Europe,Europe,Slovenia,Europe,15,15,6.5,1,7
+CRO,Europe,Europe,Croatia,Europe,15,15,7.5,1,8
+NOR,Europe,Europe,Norway,Europe,16,16,2,1,2
+POL,Europe,Europe,Poland,Europe,16,16,4,1,5
+CZE,Europe,Europe,Czech Republic (Czechia),Europe,16,16,5,1,6
+AUT,Europe,Europe,Austria,Europe,16,16,6,1,7
+BOS,Europe,Europe,Bosnia and Herzegovina,Europe,16,16,7,1,8
+MNG,Europe,Europe,Montenegro,Europe,16,16,8,1,9
+ALB,Europe,Europe,Albania,Europe,16,16,9,1,10
+SWE,Europe,Europe,Sweden,Europe,17,17,2.5,1,2
+LIT,Europe,Europe,Lithuania,Europe,17,17,4.5,1,5
+SVK,Europe,Europe,Slovakia,Europe,17,17,5.5,1,6
+HUN,Europe,Europe,Hungary,Europe,17,17,6.5,1,7
+SRB,Europe,Europe,Serbia,Europe,17,17,7.5,1,8
+KOS,Europe,Europe,Kosovo,Europe,17,17,8.5,1,9
+GRE,Europe,Europe,Greece,Europe,17,17,9.5,1,10
+FIN,Europe,Europe,Finland,Europe,18,18,2,1,2
+EST,Europe,Europe,Estonia,Europe,18,18,3,1,3
+LAT,Europe,Europe,Latvia,Europe,18,18,4,1,4
+BLR,Europe,Europe,Belarus,Europe,18,18,5,1,5
+MVA,Europe,Europe,Moldova,Europe,18,18,6,1,6
+ROM,Europe,Europe,Romania,Europe,18,18,7,1,7
+BUL,Europe,Europe,Bulgaria,Europe,18,18,8,1,8
+MKD,Europe,Europe,Macedonia,Europe,18,18,9,1,9
+UKR,Europe,Europe,Ukraine,Europe,19,19,6.5,1,6
+CAN,North America,North America,Canada,America,2,2,2,1,2
+USA,North America,North America,United States,America,2,2,3,1,3
+MEX,North America,North America,Mexico,America,2,2,4,1,4
+AUS,Oceania,Oceania,Australia,Oceania,26,26,19.5,1,20
+PAL,Oceania,Oceania,Palau,Oceania,27,27,17,1,17
+PNG,Oceania,Oceania,Papua New Guinea,Oceania,27,27,18,1,18
+MAR,Oceania,Oceania,Marshall Islands,Oceania,28,28,15.5,1,16
+MIC,Oceania,Oceania,Micronesia,Oceania,28,28,16.5,1,17
+NAU,Oceania,Oceania,Nauru,Oceania,28,28,17.5,1,18
+SOL,Oceania,Oceania,Solomon Islands,Oceania,28,28,18.5,1,19
+VAN,Oceania,Oceania,Vanuatu,Oceania,28,28,19.5,1,20
+NZL,Oceania,Oceania,New Zealand,Oceania,28,28,21.5,1,22
+KIR,Oceania,Oceania,Kiribati,Oceania,29,29,18,1,18
+TUV,Oceania,Oceania,Tuvalu,Oceania,29,29,19,1,19
+FIJ,Oceania,Oceania,Fiji,Oceania,29,29,20,1,20
+SAM,Oceania,Oceania,Samoa,Oceania,30,30,18.5,1,19
+TGA,Oceania,Oceania,Tonga,Oceania,30,30,19.5,1,20
+COL,South America,South America,Colombia,America,6,6,10,1,10
+ECU,South America,South America,Ecuador,America,6,6,11,1,11
+PER,South America,South America,Peru,America,6,6,12,1,12
+VEN,South America,South America,Venezuela,America,7,7,9.5,1,10
+BUY,South America,South America,Guyana,America,7,7,10.5,1,11
+BLV,South America,South America,Bolivia,America,7,7,11.5,1,12
+PAR,South America,South America,Paraguay,America,7,7,12.5,1,13
+CHI,South America,South America,Chile,America,7,7,13.5,1,14
+ARG,South America,South America,Argentina,America,7,7,14.5,1,15
+GUF,South America,South America,French Guiana,America,8,8,11,1,11
+SUR,South America,South America,Suriname,America,8,8,12,1,12
+URU,South America,South America,Uruguay,America,8,8,13,1,13
+FLK,South America,South America,Falkland Islands,America,8,8,15,1,16
+BRZ,South America,South America,Brazil,America,9,9,12.5,1,12
+MYA,South East Asia,Asia,Myanmar,Asia,25,25,10.5,1,11
+THA,South East Asia,Asia,Thailand,Asia,26,26,11.5,1,12
+MAS,South East Asia,Asia,Malaysia,Asia,26,26,12.5,1,13
+SIN,South East Asia,Asia,Singapore,Asia,26,26,13.5,1,14
+LAO,South East Asia,Asia,Laos,Asia,26,26,10.5,1,11
+CBD,South East Asia,Asia,Cambodia,Asia,27,27,11,1,11
+BRU,South East Asia,Asia,Brunei,Asia,27,27,13,1,13
+INA,South East Asia,Asia,Indonesia,Asia,27,27,14,1,14
+TIM,South East Asia,Asia,East Timor (Timor-Leste),Asia,27,27,15,1,15
+VIE,South East Asia,Asia,Vietnam,Asia,27,27,10,1,10
+PHI,South East Asia,Asia,Philippines,Asia,28,28,11.5,1,12
+IRN,Southern Asia,Asia,Iran,Asia,22,22,8,1,8
+AFG,Southern Asia,Asia,Afghanistan,Asia,22,22,9,1,9
+MAL,Southern Asia,Asia,Maldives,Asia,22,22,12,1,13
+PAK,Southern Asia,Asia,Pakistan,Asia,23,23,8.5,1,9
+IND,Southern Asia,Asia,India,Asia,23,23,9.5,1,10
+SRI,Southern Asia,Asia,Sri Lanka,Asia,23,23,10.5,1,11
+BAN,Southern Asia,Asia,Bangladesh,Asia,25,25,9.5,1,10
+NEP,Southern Asia,Asia,Nepal,Asia,24,24,9,1,9
+BHU,Southern Asia,Asia,Bhutan,Asia,25,25,8.5,1,9
+CYP,Western Asia,Asia,Cyprus,Asia,18,18,11,1,11
+TUR,Western Asia,Asia,Turkey,Asia,19,19,7.5,1,8
+JOR,Western Asia,Asia,Jordan,Asia,19,19,8.5,1,9
+LEB,Western Asia,Asia,Lebanon,Asia,19,19,9.5,1,10
+ISR,Western Asia,Asia,Israel,Asia,19,19,10.5,1,11
+PSE,Western Asia,Asia,Palestine,Asia,19,19,11.5,1,12
+YEM,Western Asia,Asia,Yemen,Asia,19,19,12.5,1,13
+SYR,Western Asia,Asia,Syria,Asia,20,20,8,1,8
+KUW,Western Asia,Asia,Kuwait,Asia,20,20,9,1,9
+KSA,Western Asia,Asia,Saudi Arabia,Asia,20,20,10,1,10
+QAT,Western Asia,Asia,Qatar,Asia,20,20,11,1,11
+OMN,Western Asia,Asia,Oman,Asia,20,20,12,1,12
+GEO,Western Asia,Asia,Georgia,Asia,21,21,5.5,1,6
+ARM,Western Asia,Asia,Armenia,Asia,21,21,6.5,1,7
+IRQ,Western Asia,Asia,Iraq,Asia,21,21,7.5,1,8
+BHR,Western Asia,Asia,Bahrain,Asia,21,21,9.5,1,10
+UAE,Western Asia,Asia,United Arab Emirates,Asia,21,21,10.5,1,11
+AZE,Western Asia,Asia,Azerbaijan,Asia,22,22,7,1,7
